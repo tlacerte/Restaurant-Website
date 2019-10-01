@@ -4,6 +4,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Review from './components/Reviews/Reviews';
 import Header from './components/Header/Header';
+import MenuNav from './components/MenuNav/MenuNav';
+import Dinner from './components/Menus/Dinner/Dinner'
 
 library.add(fab)
 
@@ -45,8 +47,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <MenuNav />
         <hr />
-        <ul>{composedReviews}</ul>
+        <ul className="review-list">{composedReviews}</ul>
+        <Dinner />
       </div>
     )
   }

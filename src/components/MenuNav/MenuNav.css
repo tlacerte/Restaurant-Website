@@ -1,0 +1,13 @@
+.menu-nav {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-nav-link {
+    margin: 0em 1em;
+    font-size: 2vmin;
+}
+

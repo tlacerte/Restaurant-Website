@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './Reviews.css'
 
 const Review = ({rating, comment, user, handleDelete, handleUpdate, id}) => {
     return (
