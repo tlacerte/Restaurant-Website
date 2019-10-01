@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Review from './components/Reviews/Reviews';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    reviews : [
+      {
+        rating : 5,
+        comment : "iincredible",
+        user : "tlacerte"
+      },
+      {
+        rating : 5,
+        comment : "so amazing",
+        user : "sarahl"
+      }
+    ]
+  }
+  
+
+
+
+  
+  
+  render(){
+    const composedReviews = this.state.reviews.map((item, index) => {
+      return (
+        <Review 
+          key={index} 
+          rating={item.rating}
+          comment={item.comment} 
+          user={item.user}
+          //handleDelete={this.handleDelete}
+          id={index}
+        />
+      )
+    })
+    return (
+      <div className="App">
+        <h1>Howdy</h1>
+        <ul>{composedReviews}</ul>
+      </div>
+    )
+  }
 }
 
 export default App;
