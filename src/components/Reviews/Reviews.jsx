@@ -1,26 +1,43 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react'
+import ReviewItems from './ReviewItems'
 import './Reviews.css'
 
-const Review = ({rating, comment, user, handleDelete, handleUpdate, id}) => {
-    return (
-        <li>
-            <h3>{rating}</h3>
-            <p>{comment}</p>
-            <h6>{user}</h6>
-            <button onClick={() => handleDelete(id)}>Delete</button>
-            <button onClick={() => handleUpdate(id)}>Update</button>
-        </li>
-    )
+class Reviews extends Component {
+    state = {
+        reviews : [
+          {
+            rating : 5,
+            comment : "iincredible",
+            user : "tlacerte"
+          },
+          {
+            rating : 5,
+            comment : "so amazing",
+            user : "sarahl"
+          }
+        ]
+      }
+    
+    render(){
+        const composedReviews = this.state.reviews.map((item, index) => {
+            return (
+              <ReviewItems 
+                key={index} 
+                rating={item.rating}
+                comment={item.comment} 
+                user={item.user}
+                //handleDelete={this.handleDelete}
+                //handleUpdate={this.handleUpdate}
+                id={index}
+              />
+            )
+          })
+        return (
+            <div>
+            {composedReviews}
+            </div>
+        )
+    }
 }
 
-export default Review 
-
-Review.propTypes = {
-    rating: PropTypes.number,
-    comment: PropTypes.string,
-    user: PropTypes.string,
-    handleDelete: PropTypes.func,
-    handleUpdate: PropTypes.func,
-    id: PropTypes.string
-}
+export default Reviews
