@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 import Review from './components/Reviews/Reviews';
+import Header from './components/Header/Header';
+
+library.add(fab)
 
 class App extends Component {
   state = {
@@ -32,13 +37,15 @@ class App extends Component {
           comment={item.comment} 
           user={item.user}
           //handleDelete={this.handleDelete}
+          //handleUpdate={this.handleUpdate}
           id={index}
         />
       )
     })
     return (
       <div className="App">
-        <h1>Howdy</h1>
+        <Header />
+        <hr />
         <ul>{composedReviews}</ul>
       </div>
     )

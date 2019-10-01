@@ -1,0 +1,36 @@
+.App-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1vmin;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3vmin;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+  
+  .nav-link {
+    margin: 3vmin;
+  }
+  
+  .logo {
+    font-family: 'Charmonman', cursive;
+    transform: rotate(-20deg);
+  }
+  
+  .social-links {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+  
+  .social-link {
+    margin: 1vmin;
+  }
