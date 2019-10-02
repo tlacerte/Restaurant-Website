@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import DinnerItems from './DinnerItems'
+import LunchItems from './LunchItems'
 
 import '../Menus.css'
 
-class Dinner extends Component {
+class Lunch extends Component {
     state = {
         isShowing : false,
         lilSnacks : [
@@ -12,16 +12,11 @@ class Dinner extends Component {
                 details : "Bottomless chips and world famous queso",
                 price : 4
             },
-            {
-                item : "Brussel Sprouts",
-                details : "Maple glazed with bacon and onions",
-                price : 6
-            }
         ],
         main : [
             {
-                item : "Skirt Steak",
-                details : "With potatoes and sauce",
+                item : "Steak Sandwich",
+                details : "side of fries and garlic aoli",
                 price : 14
             }
         ],
@@ -38,7 +33,7 @@ class Dinner extends Component {
     render(){
         const composedLilSnacks = this.state.lilSnacks.map((item, index) => {
             return (
-                <DinnerItems
+                <LunchItems
                     id={index} 
                     item={item.item}
                     details={item.details}
@@ -48,7 +43,7 @@ class Dinner extends Component {
           })
         const composedSalad = this.state.salad.map((item, index) => {
             return (
-                <DinnerItems 
+                <LunchItems 
                     id={index}
                     item={item.item}
                     details={item.details}
@@ -58,7 +53,7 @@ class Dinner extends Component {
           })
         const composedMain = this.state.main.map((item, index) => {
             return (
-                <DinnerItems 
+                <LunchItems 
                     id={index}
                     item={item.item}
                     details={item.details}
@@ -68,7 +63,7 @@ class Dinner extends Component {
           })
         return (
             <>
-                <h1>Dinner</h1>
+                <h1>Lunch</h1>
                 <h2>Lil Snacks</h2> 
                     <ul>{composedLilSnacks}</ul>
                 <h2>Main</h2>
@@ -80,4 +75,4 @@ class Dinner extends Component {
     }
 }
 
-export default Dinner
+export default Lunch

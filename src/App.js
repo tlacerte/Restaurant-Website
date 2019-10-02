@@ -6,6 +6,8 @@ import Reviews from './components/Reviews/Reviews';
 import Header from './components/Header/Header';
 import MenuNav from './components/MenuNav/MenuNav';
 import Dinner from './components/Menus/Dinner/Dinner'
+import Lunch from './components/Menus/Lunch/Lunch'
+import Dessert from './components/Menus/Dessert/Dessert'
 
 library.add(fab)
 
@@ -17,8 +19,10 @@ class App extends Component {
         <Header />
         <MenuNav />
         <hr />
-        <Reviews />
         <Dinner />
+        <Lunch />
+        <Dessert />
+        <Reviews />
       </div>
     )
   }

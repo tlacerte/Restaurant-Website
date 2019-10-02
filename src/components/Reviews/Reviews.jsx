@@ -33,9 +33,9 @@ class Reviews extends Component {
             )
           })
         return (
-            <div>
+            <ul className="review-list">
             {composedReviews}
-            </div>
+            </ul>
         )
     }
 }
