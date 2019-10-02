@@ -5,9 +5,11 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import Reviews from './components/Reviews/Reviews';
 import Header from './components/Header/Header';
 import MenuNav from './components/MenuNav/MenuNav';
-import Dinner from './components/Menus/Dinner/Dinner'
-import Lunch from './components/Menus/Lunch/Lunch'
-import Dessert from './components/Menus/Dessert/Dessert'
+import Dinner from './components/Menus/Dinner/Dinner';
+import Lunch from './components/Menus/Lunch/Lunch';
+import Dessert from './components/Menus/Dessert/Dessert';
+import Brunch from './components/Menus/Brunch/Brunch';
+import Beverages from './components/Menus/Beverages/Beverages';
 
 library.add(fab)
 
@@ -22,6 +24,8 @@ class App extends Component {
         <Dinner />
         <Lunch />
         <Dessert />
+        <Brunch />
+        <Beverages />
         <Reviews />
       </div>
     )

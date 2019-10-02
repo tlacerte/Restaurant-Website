@@ -9,11 +9,6 @@ class Reviews extends Component {
             rating : 5,
             comment : "iincredible",
             user : "tlacerte"
-          },
-          {
-            rating : 5,
-            comment : "so amazing",
-            user : "sarahl"
           }
         ]
       }
