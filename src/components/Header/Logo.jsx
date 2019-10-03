@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
     return (
-        <div className="logo">
-            <h1>Restaurant</h1>
+        <div>
+            <Link className="logo" to='/'><h1 className="logo">Restaurant</h1></Link>
         </div>
     )
 }

@@ -28,6 +28,8 @@
   .logo {
     font-family: 'Charmonman', cursive;
     transform: rotate(-20deg);
+    text-decoration: none;
+    color: black;
   }
   
   .social-links {
