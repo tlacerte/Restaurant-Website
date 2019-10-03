@@ -5,7 +5,6 @@ import '../Menus.css'
 
 class Lunch extends Component {
     state = {
-        isShowing : false,
         lilSnacks : [
             {
                 item : "Queso",

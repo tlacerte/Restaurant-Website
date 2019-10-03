@@ -5,7 +5,6 @@ import '../Menus.css'
 
 class Dessert extends Component {
     state = {
-        isShowing : false,
         sweetTreats : [
             {
                 item : "Chocolate Cake",

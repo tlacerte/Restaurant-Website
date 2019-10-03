@@ -5,7 +5,6 @@ import '../Menus.css'
 
 class Beverages extends Component {
     state = {
-        isShowing : false,
         alcoholic : [
             {
                 item : "Mezcal Margarita",

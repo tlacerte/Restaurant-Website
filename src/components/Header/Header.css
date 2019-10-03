@@ -2,12 +2,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1vmin;
     background-color: pink;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
   }
   
   .nav-links {
@@ -33,4 +32,27 @@
   
   .social-link {
     margin: 1vmin;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .App-header {
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1vmin;
+      background-color: pink;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 3vmin;
+    }
+
+    .nav-link {
+      margin: 0 3vmin;
+    }
+
+    .social-link {
+      margin: 0 1vmin;
+    }
   }

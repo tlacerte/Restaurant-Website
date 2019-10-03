@@ -11,3 +11,6 @@
     font-size: 2vmin;
 }
 
+.menu-nav-link:hover {
+    color: gray;
+}

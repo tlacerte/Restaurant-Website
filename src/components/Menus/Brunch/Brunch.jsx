@@ -5,7 +5,6 @@ import '../Menus.css'
 
 class Brunch extends Component {
     state = {
-        isShowing : false,
         specialty : [
             {
                 item : "Bacon benedict",
