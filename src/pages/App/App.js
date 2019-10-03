@@ -9,6 +9,7 @@ import Home from '../Home/Home'
 import ReviewsPage from '../ReviewsPage/ReviewsPage'
 import ContactPage from '../ContactPage/ContactPage'
 import ReservationsPage from '../ReservationsPage/ReservationsPage'
+import OrderPage from '../OrderPage/OrderPage'
 import Dinner from '../../components/Menus/Dinner/Dinner';
 import Lunch from '../../components/Menus/Lunch/Lunch';
 import Dessert from '../../components/Menus/Dessert/Dessert';
@@ -69,6 +70,9 @@ class App extends Component {
           }/>
           <Route exact path='/reservations' render={() =>
             <ReservationsPage />
+          }/>
+          <Route exact path='/orderonline' render={() =>
+            <OrderPage />
           }/>
         </Switch>
       </div>
