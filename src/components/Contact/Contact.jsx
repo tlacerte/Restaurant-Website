@@ -1,5 +1,6 @@
 import React from 'react'
 import Hours from './Hours'
+import Map from '../Map/Map'
 import './Contact.css'
 
 const Contact = () => {
@@ -10,7 +11,7 @@ const Contact = () => {
                 <Hours />
             <h3>Events</h3>
             <h3>Address</h3>
-            <p>Google Maps Here</p>
+            <Map />
         </>
     )
 }
