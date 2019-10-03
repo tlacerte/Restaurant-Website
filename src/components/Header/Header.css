@@ -17,6 +17,12 @@
   
   .nav-link {
     margin: 3vmin;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-link:hover {
+    color: gray;
   }
   
   .logo {

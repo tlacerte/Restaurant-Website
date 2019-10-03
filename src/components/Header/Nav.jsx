@@ -1,14 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
         <nav>
             <ul className="nav-links">
-                <li className="nav-link">Menus</li>
-                <li className="nav-link">Press</li>
-                <li className="nav-link">Reviews</li>
-                <li className="nav-link">Contact</li>
-                <li className="nav-link">Reservations</li>
+                <li>
+                    <Link className="nav-link" to='/menus'>Menus</Link>
+                </li>
+                <li>
+                    <Link className="nav-link" to='/reviews'>Reviews</Link>
+                </li>
+                <li>
+                    <Link className="nav-link" to='/contact'>Contact</Link>
+                </li>
+                <li>
+                    <Link className="nav-link" to='/reservations'>Reservations</Link>
+                </li>
             </ul>
         </nav>
     )

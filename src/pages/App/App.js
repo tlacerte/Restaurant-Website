@@ -17,9 +17,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Route exact path='/' render={() =>
-          <Home />
-        }/>
+        <Switch>
+          <Route exact path='/' render={() =>
+            <Home />
+          }/>
+        </Switch>
         {/* 
         <Reviews /> */}
       </div>
