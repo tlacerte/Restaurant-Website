@@ -9,6 +9,11 @@ import Home from '../Home/Home'
 import ReviewsPage from '../ReviewsPage/ReviewsPage'
 import ContactPage from '../ContactPage/ContactPage'
 import ReservationsPage from '../ReservationsPage/ReservationsPage'
+import Dinner from '../../components/Menus/Dinner/Dinner';
+import Lunch from '../../components/Menus/Lunch/Lunch';
+import Dessert from '../../components/Menus/Dessert/Dessert';
+import Brunch from '../../components/Menus/Brunch/Brunch';
+import Beverages from '../../components/Menus/Beverages/Beverages';
 
 
 library.add(fab)
@@ -26,6 +31,36 @@ class App extends Component {
           <Route exact path='/menus' render={() =>
             <Menus />
           }/>
+            <Route exact path='/menus/dinner' render ={() =>
+              <>
+              <Menus />
+              <Dinner />
+              </>
+            }/>
+            <Route exact path='/menus/lunch' render ={() =>
+              <>
+              <Menus />
+              <Lunch />
+              </>
+            }/>
+            <Route exact path='/menus/brunch' render ={() =>
+              <>
+              <Menus />
+              <Brunch />
+              </>
+            }/>
+            <Route exact path='/menus/desserts' render ={() =>
+              <>
+              <Menus />
+              <Dessert />
+              </>
+            }/>
+            <Route exact path='/menus/beverages' render ={() =>
+              <>
+              <Menus />
+              <Beverages />
+              </>
+            }/>
           <Route exact path='/reviews' render={() =>
             <ReviewsPage />
           }/>

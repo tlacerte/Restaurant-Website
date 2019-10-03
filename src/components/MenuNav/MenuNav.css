@@ -9,6 +9,8 @@
 .menu-nav-link {
     margin: 0em 1em;
     font-size: 2vmin;
+    text-decoration: none;
+    color: black;
 }
 
 .menu-nav-link:hover {

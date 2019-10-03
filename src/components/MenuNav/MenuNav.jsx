@@ -1,15 +1,26 @@
 import React from 'react'
 import './MenuNav.css'
+import { Link } from 'react-router-dom';
 
 const MenuNav = () =>{
     return (
         <div>
             <ul className="menu-nav">
-                <li className="menu-nav-link">Dinner</li>
-                <li className="menu-nav-link">Lunch</li>
-                <li className="menu-nav-link">Brunch</li>
-                <li className="menu-nav-link">Dessert</li>
-                <li className="menu-nav-link">Beverages</li> 
+                <li>
+                    <Link className="menu-nav-link" to='/menus/dinner'>Dinner</Link>
+                </li>
+                <li>
+                    <Link className="menu-nav-link" to='/menus/lunch'>Lunch</Link>
+                </li>
+                <li>
+                    <Link className="menu-nav-link" to='/menus/brunch'>Brunch</Link>
+                </li>
+                <li>
+                    <Link className="menu-nav-link" to='/menus/desserts'>Desserts</Link>
+                </li>
+                <li>
+                    <Link className="menu-nav-link" to='/menus/beverages'>Beverages</Link>
+                </li> 
             </ul>
         </div>
     )
