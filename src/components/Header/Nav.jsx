@@ -18,7 +18,7 @@ const Nav = () => {
                     <Link className="nav-link" to='/reservations'>Reservations</Link>
                 </li>
                 <li>
-                    <Link className="nav-link" to='/orderonline'>Order Online</Link>
+                    <Link className="nav-link order-link" to='/orderonline'>Order Online</Link>
                 </li>
             </ul>
         </nav>
