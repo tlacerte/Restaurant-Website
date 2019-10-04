@@ -5,3 +5,9 @@
     align-items: center;
     margin: 0 auto;
 }
+
+.map-center {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}

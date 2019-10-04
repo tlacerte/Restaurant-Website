@@ -15,12 +15,29 @@ import Lunch from '../../components/Menus/Lunch/Lunch';
 import Dessert from '../../components/Menus/Dessert/Dessert';
 import Brunch from '../../components/Menus/Brunch/Brunch';
 import Beverages from '../../components/Menus/Beverages/Beverages';
-
+import LoginPage from '../LoginPage/LoginPage'
+import SignupPage from '../SignupPage/SignupPage'
+import userService from '../../utils/userService';
 
 library.add(fab)
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      user: userService.getUser()
+    };
+  }
+
+  handleLogout = () => {
+    userService.logout();
+    this.setState({ user: null });
+  }
   
+  handleSignupOrLogin = () => {
+    this.setState({user: userService.getUser()});
+  }
+
   render(){
     return (
       <div className="App">
@@ -73,6 +90,16 @@ class App extends Component {
           }/>
           <Route exact path='/orderonline' render={() =>
             <OrderPage />
+          }/>
+          <Route exact path='/signup' render={() =>
+            <SignupPage 
+              handleSignupOrLogin={this.handleSignupOrLogin}
+            />
+          }/>
+          <Route exact path='/login' render={() =>
+            <LoginPage 
+              handleSignupOrLogin={this.handleSignupOrLogin}
+            />
           }/>
         </Switch>
       </div>

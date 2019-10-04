@@ -10,8 +10,11 @@ const Contact = () => {
             <h3>Hours</h3>
                 <Hours />
             <h3>Events</h3>
+            <div className="map-center">
+                <Map />
+            </div>
             <h3>Address</h3>
-            <Map />
+
         </>
     )
 }

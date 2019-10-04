@@ -19,7 +19,6 @@ class MapContainer extends Component {
 const mapStyles = {
     width: '50%',
     height: '50%',
-    textAlign: 'center',
   };
 
 export default GoogleApiWrapper({

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ReviewItems from './ReviewItems'
+import AuthButtons from '../AuthButtons/AuthButtons'
 import './Reviews.css'
 
 class Reviews extends Component {
@@ -28,9 +29,13 @@ class Reviews extends Component {
             )
           })
         return (
+          <>
+            <h3>Login to write a review:</h3>
+            <AuthButtons />
             <ul className="review-list">
             {composedReviews}
             </ul>
+          </>
         )
     }
 }
