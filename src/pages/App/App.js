@@ -7,6 +7,7 @@ import Header from '../../components/Header/Header'
 import Menus from '../Menus/Menus'
 import Home from '../Home/Home'
 import ReviewsPage from '../ReviewsPage/ReviewsPage'
+import ReviewForm from '../../components/ReviewForm/ReviewForm'
 import ContactPage from '../ContactPage/ContactPage'
 import ReservationsPage from '../ReservationsPage/ReservationsPage'
 import OrderPage from '../OrderPage/OrderPage'
@@ -25,8 +26,17 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      user: userService.getUser()
+      user: userService.getUser(),
+      reviews: []
     };
+  }
+
+  componentDidMount = () => {
+    getAll().then(results =>{
+      this.setState({
+        reviews: [...results]
+      })
+    })
   }
 
   handleLogout = () => {
@@ -36,6 +46,18 @@ class App extends Component {
   
   handleSignupOrLogin = () => {
     this.setState({user: userService.getUser()});
+  }
+
+  handleAddPost = ({ rating, comment }) =>{
+    const url = "http://localhost:8000/api/posts"
+    const options = {
+      method: 'POST',
+      headers: {
+        'content-type' : 'application/json'
+      },
+      body: JSON.stringify({rating, comment})
+    }
+    handleVerbs(url, options)
   }
 
   render(){
@@ -80,7 +102,12 @@ class App extends Component {
               </>
             }/>
           <Route exact path='/reviews' render={() =>
+            <>
             <ReviewsPage />
+            <ReviewForm 
+              handleAddPost={this.handleAddPost}
+            />
+            </>
           }/>
           <Route exact path='/contact' render={() =>
             <ContactPage />
@@ -108,3 +135,16 @@ class App extends Component {
 }
 
 export default App;
+
+async function getAll(){
+  const url = "http://localhost:8000/api/posts"
+  const initialFetch = await fetch(url)
+  const fetchJSON = await initialFetch.json()
+  return await fetchJSON
+}
+
+async function handleVerbs(url, options){
+  const initialFetch = await fetch(url, options)
+  const fetchJSON = await initialFetch.json()
+  return await fetchJSON
+}
