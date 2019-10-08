@@ -4,24 +4,13 @@ import AuthButtons from '../AuthButtons/AuthButtons'
 import './Reviews.css'
 
 class Reviews extends Component {
-    state = {
-        reviews : [
-          {
-            rating : 5,
-            comment : "iincredible",
-            user : "tlacerte"
-          }
-        ]
-      }
-    
     render(){
-        const composedReviews = this.state.reviews.map((item, index) => {
+        const composedReviews = this.props.reviews.map((item, index) => {
             return (
               <ReviewItems 
                 key={index} 
                 rating={item.rating}
                 comment={item.comment} 
-                user={item.user}
                 //handleDelete={this.handleDelete}
                 //handleUpdate={this.handleUpdate}
                 id={index}

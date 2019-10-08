@@ -49,7 +49,7 @@ class App extends Component {
   }
 
   handleAddPost = ({ rating, comment }) =>{
-    const url = "http://localhost:8000/api/posts"
+    const url = "/api/posts"
     const options = {
       method: 'POST',
       headers: {
@@ -103,7 +103,9 @@ class App extends Component {
             }/>
           <Route exact path='/reviews' render={() =>
             <>
-            <ReviewsPage />
+            <ReviewsPage 
+              reviews={this.state.reviews}
+            />
             <ReviewForm 
               handleAddPost={this.handleAddPost}
             />
@@ -118,14 +120,16 @@ class App extends Component {
           <Route exact path='/orderonline' render={() =>
             <OrderPage />
           }/>
-          <Route exact path='/signup' render={() =>
+          <Route exact path='/signup' render={({history}) =>
             <SignupPage 
               handleSignupOrLogin={this.handleSignupOrLogin}
+              history={history}
             />
           }/>
-          <Route exact path='/login' render={() =>
+          <Route exact path='/login' render={({history}) =>
             <LoginPage 
               handleSignupOrLogin={this.handleSignupOrLogin}
+              history={history}
             />
           }/>
         </Switch>
@@ -137,7 +141,7 @@ class App extends Component {
 export default App;
 
 async function getAll(){
-  const url = "http://localhost:8000/api/posts"
+  const url = "/api/posts"
   const initialFetch = await fetch(url)
   const fetchJSON = await initialFetch.json()
   return await fetchJSON

@@ -1,11 +1,11 @@
 var express = require('express')
 var router = express.Router()
-var blogCtrl = require('../controllers/blog')
+var reviewCtrl = require('../../controllers/reviews')
 
-router.get('/posts', blogCtrl.getAllPosts)
-router.get('/posts/id', blogCtrl.getOnePost)
-router.put('/post/:id', blogCtrl.edit)
-router.post('/post', blogCtrl.createPost)
-router.delete('/post/:id', blogCtrl.deletePost)
+router.get('/posts', reviewCtrl.getAllPosts)
+router.get('/posts/id', reviewCtrl.getOnePost)
+router.put('/post/:id', reviewCtrl.edit)
+router.post('/posts', reviewCtrl.createPost)
+router.delete('/post/:id', reviewCtrl.deletePost)
 
 module.exports = router
