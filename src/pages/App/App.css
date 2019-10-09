@@ -1,3 +1,8 @@
 .App {
   text-align: center;
 }
+
+body {
+  background: url(https://28nwgk2wx3p52fe6o9419sg5-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/Grindage-Pizza-438-Bloomfield-Avenue-Montclair-2.jpg) no-repeat center center fixed;
+  background-size: cover;
+}

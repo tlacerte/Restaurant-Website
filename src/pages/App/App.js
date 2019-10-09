@@ -57,7 +57,12 @@ class App extends Component {
       },
       body: JSON.stringify({rating, comment})
     }
-    handleVerbs(url, options)
+    handleVerbs(url, options).then(review =>{
+      this.setState({
+        reviews : [...this.state.reviews, review]
+      })
+    })
+
   }
 
   handleDelete = id => {
@@ -111,6 +116,7 @@ class App extends Component {
           <Route exact path='/reviews' render={() =>
             <>
             <ReviewsPage 
+              user={this.state.user}
               reviews={this.state.reviews}
               handleDelete={this.handleDelete}
             />

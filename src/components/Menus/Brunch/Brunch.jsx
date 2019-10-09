@@ -61,7 +61,7 @@ class Brunch extends Component {
             )
           })
         return (
-            <>
+            <div className="full-menu">
                 <h1>Brunch</h1>
                 <h2>Specialty</h2> 
                     <ul>{composedSpecialty}</ul>
@@ -69,7 +69,7 @@ class Brunch extends Component {
                     <ul>{composedOmlettes}</ul>
                 <h2>Sides</h2>
                     <ul>{composedSides}</ul>
-            </>
+            </div>
         )
     }
 }

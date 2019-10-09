@@ -4,13 +4,14 @@
     align-items: center;
     flex-direction: row;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .menu-nav-link {
-    margin: 0em 1em;
-    font-size: 2vmin;
+    margin: 1em;
+    font-size: 1.7vmin;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .menu-nav-link:hover {

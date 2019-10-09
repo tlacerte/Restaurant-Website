@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 const AuthButtons = (props) => {
     let buttons = props.user ?
         <div>
-            <Link to='' onClick={props.handleLogout}>LOG OUT</Link>
+            <span>Welcome, {props.user.name}</span>
             &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-            <span>WELCOME, {props.user.name}</span>
+            <Link to='/reviews' onClick={props.handleLogout}>LOG OUT</Link>
         </div>
         :
         <div>
+            <h3>Login to write a review:</h3>
             <Link to='/login'>LOG IN</Link>
             &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
             <Link to='/signup'>SIGN UP</Link>

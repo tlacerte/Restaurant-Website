@@ -61,7 +61,7 @@ class Beverages extends Component {
             )
           })
         return (
-            <>
+            <div className="full-menu">
                 <h1>Beverages</h1>
                 <h2>Alcoholic</h2> 
                     <ul>{composedAlcoholic}</ul>
@@ -69,7 +69,7 @@ class Beverages extends Component {
                     <ul>{composedJuices}</ul>
                 <h2>Classic</h2>
                     <ul>{composedClassic}</ul>
-            </>
+            </div>
         )
     }
 }

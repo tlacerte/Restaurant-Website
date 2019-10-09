@@ -1,46 +1,66 @@
 .App-header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: pink;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 2vmin;
-  }
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2vmin;
+  height: max-content;
+}
   
-  .nav-links {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-  }
-  
-  .nav-link {
-    margin: 3vmin;
-    text-decoration: none;
-    color: black;
-  }
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
 
-  .nav-link:hover {
-    color: gray;
-  }
-  
-  .logo {
-    font-family: 'Charmonman', cursive;
-    transform: rotate(-20deg);
-    text-decoration: none;
-    color: black;
-  }
-  
-  .social-links {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-  }
-  
-  .social-link {
-    margin: 1vmin;
-  }
+.nav-link {
+  margin: 1.5vmin;
+  text-decoration: none;
+  color: black;
+  height: max-content;
+  font-size: 1.6vmin;
+  display: block;
+}
+
+.nav-link:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav-link:active{
+  color:#FFFFFF;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Charmonman', cursive;
+  transform: rotate(-8deg);
+  text-decoration: none;
+  color: black;
+  margin: .1vmin;
+  font-size: 2.2vmin;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo:active {
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.social-link {
+  margin: 1vmin;
+}
 
   @media only screen and (max-width: 900px) {
     .App-header {
@@ -48,7 +68,6 @@
       left: 0;
       width: 100%;
       padding: 1vmin;
-      background-color: pink;
       display: flex;
       flex-direction: column;
       align-items: center;

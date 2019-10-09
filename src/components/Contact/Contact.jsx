@@ -5,7 +5,7 @@ import './Contact.css'
 
 const Contact = () => {
     return (
-        <>
+        <div className="contact-page">
             <h1>Contact Us</h1>
             <h3>Hours</h3>
                 <Hours />
@@ -13,7 +13,7 @@ const Contact = () => {
                 <Map />
             </div>
 
-        </>
+        </div>
     )
 }
 

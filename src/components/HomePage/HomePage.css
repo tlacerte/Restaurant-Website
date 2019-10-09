@@ -1,10 +1,9 @@
 .home-page {
     font-family: 'Charmonman', cursive;
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
     font-size: 3vmin;
     position: absolute;
     left: 50%;
     margin-left: -50px;
-    top: 50%;
-    margin-top: -50px;
+    color: white;
 }

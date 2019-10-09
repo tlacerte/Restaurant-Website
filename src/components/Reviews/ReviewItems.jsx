@@ -8,11 +8,13 @@ const deleteIcon = <FontAwesomeIcon icon={faTrash} />
 
 const Review = ({rating, comment, handleDelete, handleUpdate, id}) => {
     return (
-        <li>
-            <h3>{rating}</h3>
-            <p>{comment}</p>
-            <button onClick={() => handleDelete(id)}>{deleteIcon}</button>
-            <button onClick={() => handleUpdate(id)}>{editIcon}</button>
+        <li className="card">
+            <div className="card-body">
+                <h4 className="card-title">{rating}/5</h4>
+                <p className="card-text">{comment}</p>
+                <button className="card-link" onClick={() => handleDelete(id)}>{deleteIcon}</button>
+                <button className="card-link" onClick={() => handleUpdate(id)}>{editIcon}</button>
+            </div>
         </li>
     )
 }

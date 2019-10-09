@@ -8,15 +8,19 @@ const Nav = () => {
                 <li>
                     <Link className="nav-link" to='/menus'>Menus</Link>
                 </li>
+                <li>|</li>
                 <li>
                     <Link className="nav-link" to='/reviews'>Reviews</Link>
                 </li>
+                <li>|</li>
                 <li>
                     <Link className="nav-link" to='/contact'>Contact</Link>
                 </li>
+                <li>|</li>
                 <li>
                     <Link className="nav-link" to='/reservations'>Reservations</Link>
                 </li>
+                <li>|</li>
                 <li>
                     <Link className="nav-link order-link" to='/orderonline'>Order Online</Link>
                 </li>

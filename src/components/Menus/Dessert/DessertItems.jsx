@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 const DessertItems = ({item, details, price}) => {
     return (
         <li>
-            <h3>{item}</h3>
-            <p>{details}</p>
-            <h6>${price}</h6>
+            <p>
+            <span className="menu-title">{item} </span><span className="menu-detail">{details} </span><span className="menu-price">${price}</span>
+            </p>
         </li>
     )
 }

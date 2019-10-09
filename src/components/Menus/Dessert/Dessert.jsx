@@ -11,6 +11,26 @@ class Dessert extends Component {
                 details : "flourless",
                 price : 4
             },
+            {
+                item : "Cheesecake",
+                details : "Graham cracker crust and whipped cream",
+                price : 4
+            },
+            {
+                item : "Ice Cream Sundae",
+                details : "Chocolate fudge and rainbow sprinkles",
+                price : 5
+            },
+            {
+                item : "Warm Cookies",
+                details : "Chocolate chip or sugar",
+                price : 3
+            },
+            {
+                item : "Texas gold bars",
+                details : "Creamy, sugary goo",
+                price : 4
+            }
         ]
     }
     render(){
@@ -25,11 +45,11 @@ class Dessert extends Component {
             )
           })
         return (
-            <>
+            <div className="full-menu">
                 <h1>Dessert</h1>
                 <h2>Sweet Treats</h2> 
                     <ul>{composedSweetTreats}</ul>
-            </>
+            </div>
         )
     }
 }

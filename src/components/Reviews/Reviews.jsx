@@ -19,8 +19,9 @@ class Reviews extends Component {
           })
         return (
           <>
-            <h3>Login to write a review:</h3>
-            <AuthButtons />
+            <AuthButtons 
+              user={this.props.user}
+              />
             <ul className="review-list">
               {composedReviews}
             </ul>

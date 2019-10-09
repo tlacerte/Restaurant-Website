@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './ReviewForm.css'
 
 class ReviewForm extends Component{
     state = {
@@ -7,6 +8,7 @@ class ReviewForm extends Component{
         comment : "",
     }
     handleOnChange = event =>{
+        console.log(event.target.name)
         this.setState({
             [event.target.name] : event.target.value
         })
@@ -30,7 +32,7 @@ class ReviewForm extends Component{
                     type="number" 
                     name="rating" 
                     onChange={this.handleOnChange} 
-                    value={this.state.title} 
+                    value={this.state.rating} 
                 />
                 <br/>
                 <label>Comment: </label>
@@ -38,7 +40,7 @@ class ReviewForm extends Component{
                     type="text" 
                     name="comment" 
                     onChange={this.handleOnChange} 
-                    value={this.state.post} 
+                    value={this.state.comment} 
                 />
                 <input type="submit" />
             </form>

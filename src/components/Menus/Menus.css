@@ -1,3 +1,22 @@
 ul {
     list-style-type: none;
 }
+
+.full-menu {
+    border: 1vmin solid black;
+    border-radius: 5%;
+    /* width: 100vmin; */
+}
+
+.menu-title {
+    font-weight: bold;
+    font-size: 2vmin;
+}
+
+.menu-detail {
+    font-style: italic;
+}
+
+.menu-price {
+    font-weight: bold;
+}
