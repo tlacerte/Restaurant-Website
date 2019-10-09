@@ -60,6 +60,13 @@ class App extends Component {
     handleVerbs(url, options)
   }
 
+  handleDelete = id => {
+    let newState = this.state.reviews.filter(item => this.state.reviews[id] !== item)
+    this.setState({
+      reviews: newState
+    })
+  }  
+
   render(){
     return (
       <div className="App">
@@ -105,6 +112,7 @@ class App extends Component {
             <>
             <ReviewsPage 
               reviews={this.state.reviews}
+              handleDelete={this.handleDelete}
             />
             <ReviewForm 
               handleAddPost={this.handleAddPost}

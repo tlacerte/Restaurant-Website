@@ -4,15 +4,15 @@ import AuthButtons from '../AuthButtons/AuthButtons'
 import './Reviews.css'
 
 class Reviews extends Component {
-    render(){
+  render(){
         const composedReviews = this.props.reviews.map((item, index) => {
             return (
               <ReviewItems 
                 key={index} 
                 rating={item.rating}
                 comment={item.comment} 
-                //handleDelete={this.handleDelete}
-                //handleUpdate={this.handleUpdate}
+                handleDelete={item.handleDelete}
+                handleUpdate={item.handleUpdate}
                 id={index}
               />
             )
@@ -22,7 +22,7 @@ class Reviews extends Component {
             <h3>Login to write a review:</h3>
             <AuthButtons />
             <ul className="review-list">
-            {composedReviews}
+              {composedReviews}
             </ul>
           </>
         )
