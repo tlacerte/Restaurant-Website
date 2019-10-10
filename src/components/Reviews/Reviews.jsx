@@ -14,7 +14,7 @@ class Reviews extends Component {
             handleDelete={this.props.handleDelete}
             handleUpdate={this.props.handleUpdate}
             id={index}
-            userEmail={this.props.user.email}
+            user={this.props.user}
             itemEmail={item.email}
           />
         )
@@ -24,6 +24,7 @@ class Reviews extends Component {
       <>
         <AuthButtons 
           user={this.props.user}
+          handleLogout={this.props.handleLogout}
           />
         <ul className="review-list">
           {composedReviews}

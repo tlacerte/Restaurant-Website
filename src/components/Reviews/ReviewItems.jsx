@@ -6,14 +6,20 @@ import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
 const editIcon = <FontAwesomeIcon icon={faEdit} />
 const deleteIcon = <FontAwesomeIcon icon={faTrash} />
 
-const Review = ({rating, comment, handleDelete, handleUpdate, id, userEmail, itemEmail}) => {
-    let emailMatch = (userEmail===itemEmail) ?
+const Review = ({rating, comment, handleDelete, handleUpdate, id, user, itemEmail}) => {
+    
+    let emailMatch = null
+
+    if (user){
+        emailMatch = (user.email===itemEmail) ?
             <>
             <button onClick={() => handleDelete(id)}>{deleteIcon}</button>
             <button onClick={() => handleUpdate(id)}>{editIcon}</button>
             </>
             :
-            <></>
+            null
+            
+    }
 
     return (
         <li>
