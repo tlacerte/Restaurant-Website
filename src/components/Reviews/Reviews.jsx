@@ -19,7 +19,7 @@ class Reviews extends Component {
           />
         )
       })  
-      
+    
     return (
       <>
         <AuthButtons 

@@ -23,9 +23,12 @@ class ReviewForm extends Component{
             comment : "",
         })
     }
-    
+
     render(){
-        return (
+        let reviewForm = null;
+        if (this.props.user) {
+            reviewForm = (
+                <>
             <form className="review-form" action="reviewform" onSubmit={this.handleSubmit}>
                 <label>Rating: </label>
                 <input className="rating-form"
@@ -45,6 +48,14 @@ class ReviewForm extends Component{
             <br/>
                 <input type="submit" />
             </form>
+            </>
+            )
+        }
+
+        return (
+            <div>
+                {reviewForm}
+            </div>
         )
     }
 }

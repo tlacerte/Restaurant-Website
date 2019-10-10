@@ -22,3 +22,8 @@ a:hover {
 button {
     background: black;
 }
+
+.review-item {
+    display:flex;
+    flex-direction: column;
+}

@@ -123,6 +123,7 @@ class App extends Component {
             />
             <ReviewForm 
               handleAddPost={this.handleAddPost}
+              user={this.state.user}
             />
             </>
           }/>
