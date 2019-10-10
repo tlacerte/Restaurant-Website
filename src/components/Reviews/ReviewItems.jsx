@@ -12,12 +12,12 @@ const Review = ({rating, comment, handleDelete, handleUpdate, id}) => {
     // }
     
     return (
-        <li className="card">
-            <div className="card-body">
-                <h4 className="card-title">{rating}/5</h4>
-                <p className="card-text">{comment}</p>
-                <button className="card-link" onClick={() => handleDelete(id)}>{deleteIcon}</button>
-                <button className="card-link" onClick={() => handleUpdate(id)}>{editIcon}</button>
+        <li>
+            <div className="review-item">
+                <h4>{rating}/5</h4>
+                <p>{comment}</p>
+                <button onClick={() => handleDelete(id)}>{deleteIcon}</button>
+                <button onClick={() => handleUpdate(id)}>{editIcon}</button>
             </div>
         </li>
     )

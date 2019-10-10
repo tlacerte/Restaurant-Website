@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     color: white;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .auth {
@@ -12,4 +13,12 @@
 
 a {
     color: red;
+}
+
+a:hover {
+    color: white;
+}
+
+button {
+    background: black;
 }

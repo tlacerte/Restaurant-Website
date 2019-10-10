@@ -5,7 +5,7 @@ const OrderOnline = () => {
     return (
         <div className="order-online">
             <h1>Order Online</h1>
-            <p>Online Ordering Coming Soon</p>
+            <h3>Online Ordering Coming Soon</h3>
         </div>
     )
 }

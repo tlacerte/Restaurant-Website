@@ -26,22 +26,23 @@ class ReviewForm extends Component{
     
     render(){
         return (
-            <form action="reviewform" onSubmit={this.handleSubmit}>
+            <form className="review-form" action="reviewform" onSubmit={this.handleSubmit}>
                 <label>Rating: </label>
-                <input 
+                <input className="rating-form"
                     type="number" 
                     name="rating" 
                     onChange={this.handleOnChange} 
                     value={this.state.rating} 
-                />
-                <br/>
+                /><span className="review-5">/5</span>
+            <br/>
                 <label>Comment: </label>
-                <textarea 
+                <textarea className="comment-form"
                     type="text" 
                     name="comment" 
                     onChange={this.handleOnChange} 
                     value={this.state.comment} 
                 />
+            <br/>
                 <input type="submit" />
             </form>
         )

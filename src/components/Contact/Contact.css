@@ -6,12 +6,16 @@
     margin: 0 auto;
 }
 
-.map-center {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-}
-
 .contact-page {
     color: white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+th, td {
+    padding: 1vmin;
+}
+
+.map-div {
+    display: block;
+    margin-left: 25%;
 }

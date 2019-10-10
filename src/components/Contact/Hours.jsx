@@ -3,6 +3,7 @@ import React from 'react'
 const Hours = () => {
     return (
         <>
+        <h4>Hours</h4>
         <div className="hours-table">
         <table className="hours">
             <thead>
@@ -29,7 +30,7 @@ const Hours = () => {
             </tbody>
         </table>
         </div>
-        <h5>Happy Hour</h5>
+        <h4>Happy Hour</h4>
         <div className="hours-table">
             <table className="hours">
                 <thead>

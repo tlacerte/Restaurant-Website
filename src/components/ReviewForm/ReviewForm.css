@@ -1,3 +1,15 @@
-label {
+.review-form{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.review-form >input {
+    color: black;
+}
+
+label, .review-5 {
     color: white;
+}
+
+.rating-form {
+    width: 4em;
 }
