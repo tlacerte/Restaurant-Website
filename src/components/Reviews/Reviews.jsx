@@ -11,8 +11,8 @@ class Reviews extends Component {
                 key={index} 
                 rating={item.rating}
                 comment={item.comment} 
-                handleDelete={item.handleDelete}
-                handleUpdate={item.handleUpdate}
+                handleDelete={this.props.handleDelete}
+                handleUpdate={this.props.handleUpdate}
                 id={index}
               />
             )

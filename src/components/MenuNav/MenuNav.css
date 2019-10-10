@@ -15,5 +15,6 @@
 }
 
 .menu-nav-link:hover {
-    color: gray;
+    color: red;
+    text-decoration: none;
 }

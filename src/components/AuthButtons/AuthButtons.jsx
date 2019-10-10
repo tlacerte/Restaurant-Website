@@ -17,7 +17,7 @@ const AuthButtons = (props) => {
         </div>
     
     return (
-        <div>
+        <div className="auth">
             {buttons}
         </div>
     );

@@ -3,8 +3,8 @@ ul {
 }
 
 .full-menu {
-    border: 1vmin solid black;
-    border-radius: 5%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
     /* width: 100vmin; */
 }
 

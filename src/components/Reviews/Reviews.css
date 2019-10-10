@@ -4,3 +4,12 @@
     flex-direction: column;
     color: white;
 }
+
+.auth {
+    color: white;
+}
+
+
+a {
+    color: red;
+}

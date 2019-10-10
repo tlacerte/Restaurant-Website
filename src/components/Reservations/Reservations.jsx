@@ -1,13 +1,12 @@
 import React from 'react'
-import AuthButtons from '../AuthButtons/AuthButtons'
+import './Reservations.css'
 
 const Reservations = () => {
     return (
-        <>
+        <div className="reservations">
             <h1>Reservations</h1>
-            <h3>Login to make a reservation:</h3>
-            <AuthButtons />
-        </>
+            <h3>Please visit opentable.com for reservations</h3>
+        </div>
     )
 }
 

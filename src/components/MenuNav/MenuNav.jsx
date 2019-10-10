@@ -9,15 +9,19 @@ const MenuNav = () =>{
                 <li>
                     <Link className="menu-nav-link" to='/menus/dinner'>Dinner</Link>
                 </li>
+                <li>|</li>
                 <li>
                     <Link className="menu-nav-link" to='/menus/lunch'>Lunch</Link>
                 </li>
+                <li>|</li>
                 <li>
                     <Link className="menu-nav-link" to='/menus/brunch'>Brunch</Link>
                 </li>
+                <li>|</li>
                 <li>
                     <Link className="menu-nav-link" to='/menus/desserts'>Desserts</Link>
                 </li>
+                <li>|</li>
                 <li>
                     <Link className="menu-nav-link" to='/menus/beverages'>Beverages</Link>
                 </li> 

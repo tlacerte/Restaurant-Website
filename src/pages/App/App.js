@@ -55,7 +55,7 @@ class App extends Component {
       headers: {
         'content-type' : 'application/json'
       },
-      body: JSON.stringify({rating, comment})
+      body: JSON.stringify({rating, comment, email:this.state.user.email})
     }
     handleVerbs(url, options).then(review =>{
       this.setState({

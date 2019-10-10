@@ -7,6 +7,10 @@ const editIcon = <FontAwesomeIcon icon={faEdit} />
 const deleteIcon = <FontAwesomeIcon icon={faTrash} />
 
 const Review = ({rating, comment, handleDelete, handleUpdate, id}) => {
+    // const handleEmailMatch = () => {
+    //     if ()
+    // }
+    
     return (
         <li className="card">
             <div className="card-body">
