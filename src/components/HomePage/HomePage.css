@@ -1,9 +1,14 @@
-.home-page {
+.home-logo {
     font-family: 'Charmonman', cursive;
     transform: rotate(-10deg);
-    font-size: 3vmin;
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
+    font-size: 5vmin;
     color: white;
+    margin: 1em;
+}
+
+
+.home-description {
+    color:white;
+    background: rgba(0, 0, 0, 0.6);
+
 }
