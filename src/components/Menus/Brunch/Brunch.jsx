@@ -8,24 +8,76 @@ class Brunch extends Component {
         specialty : [
             {
                 item : "Bacon benedict",
-                details : "on top of a biscuit",
+                details : "Pulled bacon, over easy egg, spicy hollandaise on top of a biscuit",
                 price : 10
+            },
+            {
+                item : "Belgium Waffle",
+                details : "Topped with whipped cream and strawberries",
+                price : 10
+            },
+            {
+                item : "Cereal Pancakes",
+                details : "Cinnomon Toast Crunch, Fruity Pebbles, or Frosted Flakes",
+                price : 11
+
+            },
+            {
+                item : "Austin Breakfast Tacos",
+                details : "Eggs, bacon, potato, cheese, homemade salsa",
+                price : 8
+
+            },
+            {
+                item : "Breakfast Pizza",
+                details : "Sunnyside up eggs, bacon, scallions, hollandaise",
+                price : 14
             }
         ],
         omlettes : [
             {
                 item : "Feta and gouda",
-                details : "tomatoes, spinach, and red pepper",
+                details : "With tomatoes, spinach, and red pepper",
+                price : 12
+            },
+            {
+                item : "Healthy Option",
+                details : "Egg whites, spinach, kale, sun dried tomatoes",
+                price : 10
+            },
+            {
+                item : "Make your own",
+                details : "Options: feta, gouda, ricotta, goat cheese, sun dried tomatoes, spinach, kale, peppers, scallions, potato, salsa",
                 price : 12
             }
         ],
         sides : [
             {
-                item : "Bacon",
-                details : "2 strips",
+                item : "Bacon or Sausage",
+                details : "2 pieces",
                 price : 3
-
+            },
+            {
+                item : "Biscuit",
+                details : "Garlic butter sode",
+                price : 4
+            },
+            {
+                item : "Home Fries",
+                details : "",
+                price : 3
+            },
+            {
+                item : "Seasonal Fruit",
+                details : "",
+                price : 5
+            },
+            {
+                item : "Wheat or White Toast",
+                details : "Jam and butter",
+                price : 3
             }
+
         ]
       }
 

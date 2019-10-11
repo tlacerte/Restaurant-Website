@@ -10,19 +10,70 @@ class Beverages extends Component {
                 item : "Mezcal Margarita",
                 details : "fresh lime juice and triple sec",
                 price : 9
+            },
+            {
+                item : "Bird Up",
+                details : "Rum and Cherry Coke",
+                price : 7
+            },
+            {
+                item : "Frozen Marg",
+                details : "you know you want this",
+                price : 8
+            }, 
+            {
+                item : "Spicy Bloody Mary/Maria",
+                details : "Vodka or Tequila",
+                price : 8
+            },
+            {
+                item : "Salad",
+                details : "Vodka, soda, cucumber, lime",
+                price : 7
+            },
+            {
+                item : "Dessert",
+                details : "Jello shots while supplies last",
+                price : 1
             }
         ],
         juices : [
             {
                 item : "Sick Beat",
                 details : "Beats, Carrots, Lemon, Ginger",
-                price : 8
+                price : 7
+            },
+            {
+                item : "Classy",
+                details : "Apple, Banana, Strawberry, Spinach",
+                price : 7
+            },
+            {
+                item : "Tropical Times",
+                details : "Mango, Pineapple, Kale, Coconut",
+                price : 7
+            },
+            {
+                item : "Kombucha",
+                details : "Ginger, Blueberry, or Guava",
+                price : 5
             }
         ],
         classic : [
             {
                 item : "Coffee",
-                details : "side of cream and sugar",
+                details : "Iced or Hot, side of cream and sugar",
+                price : 3
+
+            },
+            {
+                item : "Soda",
+                details : "Coca-cola products",
+                price : 3
+            },
+            {
+                item : "Iced Tea",
+                details : "Sweet or Regular",
                 price : 3
 
             }
