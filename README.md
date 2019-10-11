@@ -17,11 +17,20 @@ This project uses React, NodeJS, Express, MongoDB, Token Authentication, and Goo
 [Link to ERD](https://www.draw.io/#G1342K60elrgdhB-L6csf4jJo_Pys_RkHG "Link to ERD")
 
 ## Wireframes
-![Home Page with Nav Bar](https://imgur.com/bI9DI6k)
-![Menu Page with extra menu nav](https://imgur.com/gdslGr1)
-![List of Items for different menus](https://imgur.com/koi9LCv)
-![Leaving reviews with edit and delete buttons](https://imgur.com/3IY06Ct)
-![Contact Page with a map](https://imgur.com/0IRqWhe)
+Home Page with Nav Bar
+![Home Page with Nav Bar](https://i.imgur.com/bI9DI6k.png)
+
+Menu Page with extra menu nav
+![Menu Page with extra menu nav](https://i.imgur.com/gdslGr1.png)
+
+List of Items for different menus
+![List of Items for different menus](https://i.imgur.com/koi9LCv.png?1)
+
+Leaving reviews with edit and delete buttons
+![Leaving reviews with edit and delete buttons](https://i.imgur.com/3IY06Ct.png)
+
+Contact Page with a map
+![Contact Page with a map](https://i.imgur.com/0IRqWhe.png)
 
 
 ## User Stories
