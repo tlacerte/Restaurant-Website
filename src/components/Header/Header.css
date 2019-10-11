@@ -73,14 +73,18 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      font-size: 3vmin;
     }
 
     .nav-link {
       margin: 0 3vmin;
+      font-size: 2.4vmin;
     }
 
     .social-link {
       margin: 0 1vmin;
+    }
+
+    .logo {
+      font-size: 3vmin;
     }
   }
