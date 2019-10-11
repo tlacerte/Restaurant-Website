@@ -14,7 +14,8 @@ This project uses React, NodeJS, Express, MongoDB, Token Authentication, and Goo
 
 [Link to Trello Board](https://trello.com/b/IT5wCv90/project-4 "Link to Trello Board")
 
-[Link to ERD](https://www.draw.io/#G1342K60elrgdhB-L6csf4jJo_Pys_RkHG "Link to ERD")
+ERD 
+[Link to ERD](https://i.imgur.com/nRvXwws.png?1)
 
 ## Wireframes
 Home Page with Nav Bar
